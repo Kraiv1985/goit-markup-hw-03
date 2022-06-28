@@ -1,0 +1,250 @@
+
+:root {
+   --color1:#2196F3;
+   --color-bg:#2F303A;
+   --color-bg2: #fff;
+   --color-text: #757575;
+   --color-black: #000000;
+   --color-white: #fff;
+   --color-btn: #F5F4FA;
+
+    --font-family-primary: 'Roboto', sans-serif;
+    --font-family-logo: 'Raleway', sans-serif;
+
+}
+
+body {
+    font-family: var(--font-family-primary);
+    background-color: var(--color-bg2);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--color-black);
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* header end logo footer*/
+
+.logo {
+    font-size: 26px;
+    font-family: var(--font-family-logo);
+    font-weight: 700;
+    line-height: 1.19;
+    color: black;
+}
+
+.logo span {
+    color: var(--color1);
+}
+
+.menu-link {
+    color: black;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contact-link {
+    color: var(--color-text);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.menu-link:hover,
+.contact-link:hover {
+    color: var(--color1);
+}
+
+.menu-link.current{
+    color: var(--color1);
+}
+
+/* section studio */
+
+.studio {
+    background-color: var(--color-bg);
+}
+
+.title {
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 1.36;
+    color: var(--color-white);
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+.btn-order {
+    padding: 20px 30px;
+    font-family: var(--font-family-primary);
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 0.3;
+    color: var(--color-white);
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color1);
+}
+
+/* about */
+
+.title-two {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.title-three {
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text {
+    color: var(--color-text);
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+/* work */
+
+.fotowork {
+    width: 370px;
+    height: 294px;
+}
+
+/* contact */
+
+.contactfoto {
+    width: 270px;
+    height: 260px;
+}
+
+.contact-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.contact-text {
+    font-size: 16px;
+    color: var(--color-text);
+    font-weight: 400;
+    line-height: 1.18;
+}
+
+
+/* footer */
+.text-logo-white {
+    color: var(--color-white);
+}
+
+footer {
+    background-color: var(--color-bg);
+}
+
+.adress-link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--color-text);
+}
+
+.adress li:first-child a{
+    color: var(--color-white);
+}
+
+.buttons {
+    background-color: var(--color-bg2);
+}
+
+
+.btn {
+    cursor: pointer;
+    padding: 12px 22px;
+    background-color: var(--color-btn);
+    border-radius: 4px;
+    border: none;
+    font-family: var(--font-family-primary);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+
+.btn:hover {
+    color: var(--color-white);
+    background-color: var(--color1);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn:focus {
+    color: var(--color-white);
+    background-color: var(--color1);
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--color-text);
+}
+
+.portfolio-foto {
+    width: 370px;
+    height: 290px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
