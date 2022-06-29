@@ -7,51 +7,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>studio</title>
 </head>
 <body>
     <header>
-            <div class="container">
-                <nav>
+            <div class="container main-nav">
+                <nav class="nav-menu">
                     <a class="logo" href="#"><span>Web</span>Studio</a>
                     <ul class="menu">
-                        <li><a class="menu-link current" href="./index.html">Студия</a></li>
-                        <li><a class="menu-link" href="./portfolio.html">Портфолио</a></li>
-                        <li><a class="menu-link" href="#">Контакты</a></li>
+                        <li class="menu-item"><a class="menu-link current" href="./index.html">Студия</a></li>
+                        <li class="menu-item"><a class="menu-link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Контакты</a></li>
                     </ul>
                 </nav>
                 <ul class="contact">
-                    <li><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li class="contact-item"><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="contact-item"><a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </div>
     </header>
     <main>
         <section class="studio">
             <div class="container">
-                <h1 class="title">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="title">Эффективные решения<br> для вашего бизнеса</h1>
                 <button class="btn-order" type="button">Заказать услугу</button>
             </div>                      
         </section>
         <section class="about">
-            <div class="container">
+            <div class="container conatainer-padding ">
                 <h2 class="visually-hidden title-two">Наши преимущества</H2>
-                <ul>
-                    <li class="about-title">
+                <ul class="about-title">
+                    <li class="about-item">
                         <h3 class="title-three">Внимание к деталям</h3>
                         <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
-                    <li class="about-title">
+                    <li class="about-item">
                         <h3 class="title-three">Пунктуальность</h3>
                         <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li class="about-title">
+                    <li class="about-item">
                         <h3 class="title-three">Планирование</h3>
                         <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li class="about-title">
+                    <li class="about-item">
                         <h3 class="title-three">Современные технологии</h3>
                         <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -59,44 +60,44 @@
             </div>  
         </section>
         <section class="work">
-            <div class="container">
+            <div class="container conatainer-padding">
                 <h2 class="title-two">Чем мы занимаемся</h2>
-                <ul>
-                    <li><img class="fotowork" src="./images/img1.jpg" alt="работа с компьютером"></li>
-                    <li><img class="fotowork" src="./images/img2.jpg" alt="работа с телефоном"></li>
-                    <li><img class="fotowork" src="./images/img3.jpg" alt="работа с планшетом"></li>
+                <ul class="foto">
+                    <li><img class="foto-item" src="./images/img1.jpg" alt="работа с компьютером"></li>
+                    <li><img class="foto-item" src="./images/img2.jpg" alt="работа с телефоном"></li>
+                    <li><img class="foto-item" src="./images/img3.jpg" alt="работа с планшетом"></li>
                 </ul>
             </div>
         </section>  
         <section class="contact">
-            <div class="container">
+            <div class="container conatainer-padding">
                 <h2 class="title-two">Наша команда</h2>
-                <div>
-                    <div>
+                <ul class="contact-list">
+                    <li class="contact-item">
                         <img class="contactfoto" src="./images/igor.jpg" alt="игорь">
                         <h3 class="contact-title">Игорь Демьяненко</h3>
                         <p class="contact-text">Product Designer</p>
-                    </div>
-                    <div class="contact-title">
+                    </li>
+                    <li class="contact-item">
                         <img class="contactfoto" src="./images/olga.jpg" alt="ольга">
                         <h3 class="contact-title">Ольга Репина</h3>
                         <p class="contact-text">Frontend Developer</p>
-                    </div>
-                    <div class="contact-title">
+                    </li>
+                    <li class="contact-item">
                         <img class="contactfoto" src="./images/nikolay.jpg" alt="николай">
                         <h3 class="contact-title">Николай Тарасов</h3>
                         <p class="contact-text">Marketing</p>
-                    </div>
-                    <div class="contact-title">
+                    </li>
+                    <li class="contact-item">
                         <img class="contactfoto" src="./images/mihail.jpg" alt="михаил">
                         <h3 class="contact-title">Михаил Ермаков</h3>
                         <p class="contact-text">UI Designer</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>    
     </main>
-    <footer>
+    <footer class="basement">
         <div class="container">
             <a class="logo text-logo-white" href="#"><span>Web</span>Studio</a>
             <adress>
