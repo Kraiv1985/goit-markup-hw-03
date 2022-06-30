@@ -31,8 +31,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6,p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -45,14 +44,19 @@ ul {
     list-style: none;
 }
 
+
+
 .container {
     margin: 0 auto;
     width: 1200px;
+    padding: 0 15px;
 }
 
-.container.conatainer-padding {
-    padding: 94px 0;
+.container-padding {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
+
 
 .visually-hidden {
     position: absolute;
@@ -73,7 +77,6 @@ ul {
 .main-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .nav-menu {display: flex;}
@@ -112,14 +115,15 @@ ul {
     letter-spacing: 0.02em;
 }
 
-.contact {
+.mail-phone {
     display: flex;
+    margin-left: auto;
 }
-.contact-item + .contact-item {
+.mail-phone-item + .mail-phone-item {
     margin-left: 50px;
 }
 
-.contact-link {
+.mail-phone-link {
     color: var(--color-text);
     font-weight: 500;
     line-height: 1.14;
@@ -127,7 +131,7 @@ ul {
 }
 
 .menu-link:hover,
-.contact-link:hover {
+.mail-phone-link:hover {
     color: var(--color1);
 }
 
@@ -141,7 +145,6 @@ ul {
     background-color: var(--color-bg);
     padding: 200px 0;
     text-align: center;
-    display: flex;
 }
 
 .title {
@@ -191,6 +194,10 @@ ul {
     text-align: center;
 }
 
+.work .container-padding {
+    padding-top: 0;
+}
+
 .title-three {
     margin-bottom: 10px;
     font-size: 14px;
@@ -213,12 +220,24 @@ ul {
 }
 
 .foto-item {
-    width: 100%;
+    
+    display: block;
+    width: 370px;
+    height: auto;
 }
 
+/* .foto {
+        display: flex;
+        display: block;
+        width: 100%;
+        height: auto;
+} */
+
 /* contact */
- 
-/* тест */
+
+.contact {
+    background-color: var(--color-btn)
+}
 .contact-list {
     display: flex;
     justify-content: space-between;
@@ -226,11 +245,17 @@ ul {
 
 .contact-item {
     text-align: center;
+    background: var(--color-bg2);
+    border: 1px solid var(--color-btn);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);;
 }
 /* тест */
 .contactfoto {
-    width: 100%;
     margin-bottom: 30px;
+    width: 270px;
+    height: auto;
+    
 }
 
 .contact-title {
@@ -251,6 +276,10 @@ ul {
 /* footer */
 .text-logo-white {
     color: var(--color-white);
+}
+
+.adress-item + .adress-item {
+    margin-top: 9px;
 }
 
 .basement {
@@ -311,10 +340,14 @@ ul {
     background-color: var(--color1);
 }
 
+.header-portfolio {
+    border-bottom: 1px solid var(--color-btn);
+}
+
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    gap: 45px;
+    gap: 30px;
     flex-basis: calc((100% - 45px) / 3);
 }
 
